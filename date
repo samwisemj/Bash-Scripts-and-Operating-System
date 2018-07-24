@@ -1,0 +1,26 @@
+#different formats of date
+echo "Enter choice"
+echo "1.mm-dd-yy"
+echo "2.mm-dd-yyyy"
+echo "3.dd-mm-yy"
+echo "4.dd-mm-yyyy"
+read ch
+
+if (( $ch == 1 ))
+then
+echo "Date in mm-dd-yy format"
+date +"%m-%d-%y"
+elif (( $ch==2 ))
+then
+echo "Date in mm-dd-yyyy format"
+date +"%m-%d-%Y"
+elif (( $ch==3 ))
+then
+echo "Date in dd-mm-yy format"
+date +"%d-%m-%y"
+else
+echo "Date in dd-mm-yy format"
+date +"%d-%m-%Y"
+fi
+
+
